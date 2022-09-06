@@ -8,6 +8,13 @@ This repo contains
    * `self-hosted/package.json` > `renovate`
  * the `main` branch contains a renovate.json that excludes `gradle/**`, so it'll pick up the outdated `renovate` dep.
  * the `some_branch` branch contains a modified renovate.json that excludes `self-hosted/**`, so it'll pick up the outdated `junit:junit` dep.
+ * a PR (#1) from `some_branch` to `main` and the repro step 5 is simulating the verification (QA) of this configuration change PR. The diff is
+```diff
+"ignorePaths": [
+-	"gradle/**"
++	"self-hosted/**"
+]
+```
 
 ## How to reproduce renovatebot/renovate#17635?
 
