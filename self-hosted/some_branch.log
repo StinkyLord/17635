@@ -1,0 +1,850 @@
+
+> renovate
+> renovate
+
+DEBUG: Using RE2 as regex engine
+DEBUG: Parsing configs
+DEBUG: Checking for config file in P:\projects\bugs\renovate\printConfig-useBaseBranchConfig\self-hosted/config.js
+DEBUG: File config
+       "config": {
+         "dryRun": "full",
+         "platform": "github",
+         "printConfig": true,
+         "repositories": [{"repository": "TWiStErRob/renovate-repro-17635"}],
+         "baseBranches": ["some_branch"],
+         "useBaseBranchConfig": "merge"
+       }
+DEBUG: CLI config
+       "config": {}
+DEBUG: Env config
+       "config": {"hostRules": [], "token": "***********"}
+DEBUG: Combined config
+       "config": {
+         "dryRun": "full",
+         "platform": "github",
+         "printConfig": true,
+         "repositories": [{"repository": "TWiStErRob/renovate-repro-17635"}],
+         "baseBranches": ["some_branch"],
+         "useBaseBranchConfig": "merge",
+         "hostRules": [],
+         "token": "***********"
+       }
+DEBUG: Found valid git version: 2.35.1.windows.2
+DEBUG: Using default github endpoint: https://api.github.com/
+DEBUG: No concurency limits
+       "host": "api.github.com"
+DEBUG: Platform config
+       "platformConfig": {
+         "hostType": "github",
+         "endpoint": "https://api.github.com/",
+         "isGHApp": false,
+         "isGhe": false,
+         "userDetails": {"username": "TWiStErRob", "name": "Róbert Papp"},
+         "userEmail": "papp.robert.s@gmail.com"
+       },
+       "renovateUsername": "TWiStErRob"
+DEBUG: Using platform gitAuthor: Róbert Papp <papp.robert.s@gmail.com>
+DEBUG: Adding token authentication for api.github.com to hostRules
+DEBUG: Using baseDir: C:/Users/TWiStEr/AppData/Local/Temp/renovate
+DEBUG: Using cacheDir: C:/Users/TWiStEr/AppData/Local/Temp/renovate/cache
+DEBUG: Initializing Renovate internal cache into C:/Users/TWiStEr/AppData/Local/Temp/renovate/cache/renovate/renovate-cache-v1
+DEBUG: Commits limit = null
+DEBUG: Setting global hostRules
+DEBUG: Adding token authentication for api.github.com to hostRules
+DEBUG: validatePresets()
+DEBUG: Reinitializing hostRules for repo
+DEBUG: Clearing hostRules
+DEBUG: Adding token authentication for api.github.com to hostRules
+ INFO: Repository started (repository=TWiStErRob/renovate-repro-17635)
+       "renovateVersion": "32.190.4"
+DEBUG: Using localDir: C:/Users/TWiStEr/AppData/Local/Temp/renovate/repos/github/TWiStErRob/renovate-repro-17635 (repository=TWiStErRob/renovate-repro-17635)
+DEBUG: PackageFiles.clear() - Package files deleted (repository=TWiStErRob/renovate-repro-17635)
+       "baseBranches": []
+DEBUG: resetMemCache() (repository=TWiStErRob/renovate-repro-17635)
+DEBUG: initRepo("TWiStErRob/renovate-repro-17635") (repository=TWiStErRob/renovate-repro-17635)
+DEBUG: No concurency limits (repository=TWiStErRob/renovate-repro-17635)
+       "host": "api.github.com"
+DEBUG: TWiStErRob/renovate-repro-17635 default branch = main (repository=TWiStErRob/renovate-repro-17635)
+DEBUG: Using personal access token for git init (repository=TWiStErRob/renovate-repro-17635)
+DEBUG: Resetting npmrc (repository=TWiStErRob/renovate-repro-17635)
+DEBUG: detectSemanticCommits() (repository=TWiStErRob/renovate-repro-17635)
+DEBUG: Initializing git repository into C:/Users/TWiStEr/AppData/Local/Temp/renovate/repos/github/TWiStErRob/renovate-repro-17635 (repository=TWiStErRob/renovate-repro-17635)
+DEBUG: Performing blobless clone (repository=TWiStErRob/renovate-repro-17635)
+DEBUG: git clone completed (repository=TWiStErRob/renovate-repro-17635)
+       "durationMs": 1273
+DEBUG: latest repository commit (repository=TWiStErRob/renovate-repro-17635)
+       "latestCommit": {
+         "hash": "4462d9e8586c8b68567572fd877b718e1557222f",
+         "date": "2022-09-06T21:54:20+01:00",
+         "message": "Add minimal repro with self-hosted setup",
+         "refs": "HEAD -> main, origin/main, origin/HEAD",
+         "body": "",
+         "author_name": "Róbert Papp (TWiStErRob)",
+         "author_email": "papp.robert.s@gmail.com"
+       }
+DEBUG: getCommitMessages (repository=TWiStErRob/renovate-repro-17635)
+DEBUG: Semantic commits detection: unknown (repository=TWiStErRob/renovate-repro-17635)
+DEBUG: No semantic commits detected (repository=TWiStErRob/renovate-repro-17635)
+DEBUG: checkOnboarding() (repository=TWiStErRob/renovate-repro-17635)
+DEBUG: isOnboarded() (repository=TWiStErRob/renovate-repro-17635)
+DEBUG: findFile(renovate.json) (repository=TWiStErRob/renovate-repro-17635)
+DEBUG: Config file exists (repository=TWiStErRob/renovate-repro-17635)
+       "fileName": "renovate.json"
+DEBUG: Retrieving issueList (repository=TWiStErRob/renovate-repro-17635)
+DEBUG: Retrieved 0 issues (repository=TWiStErRob/renovate-repro-17635)
+DEBUG: Repo is onboarded (repository=TWiStErRob/renovate-repro-17635)
+DEBUG: Found renovate.json config file (repository=TWiStErRob/renovate-repro-17635)
+DEBUG: Repository config (repository=TWiStErRob/renovate-repro-17635)
+       "fileName": "renovate.json",
+       "config": {
+         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+         "ignorePaths": ["gradle/**"]
+       }
+DEBUG: migrateAndValidate() (repository=TWiStErRob/renovate-repro-17635)
+DEBUG: No config migration necessary (repository=TWiStErRob/renovate-repro-17635)
+DEBUG: massaged config (repository=TWiStErRob/renovate-repro-17635)
+       "config": {
+         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+         "ignorePaths": ["gradle/**"]
+       }
+DEBUG: migrated config (repository=TWiStErRob/renovate-repro-17635)
+       "config": {
+         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+         "ignorePaths": ["gradle/**"]
+       }
+DEBUG: Found repo ignorePaths (repository=TWiStErRob/renovate-repro-17635)
+       "ignorePaths": ["gradle/**"]
+DEBUG: No vulnerability alerts found (repository=TWiStErRob/renovate-repro-17635)
+DEBUG: No vulnerability alerts found (repository=TWiStErRob/renovate-repro-17635)
+ INFO: Full resolved config and hostRules including presets (repository=TWiStErRob/renovate-repro-17635)
+       "config": {
+         "detectGlobalManagerConfig": false,
+         "detectHostRulesFromEnv": false,
+         "postUpgradeTasks": {
+           "commands": [],
+           "fileFilters": [],
+           "executionMode": "update"
+         },
+         "onboardingBranch": "renovate/configure",
+         "onboardingCommitMessage": null,
+         "onboardingConfigFileName": "renovate.json",
+         "onboardingNoDeps": false,
+         "onboardingPrTitle": "Configure Renovate",
+         "configMigration": false,
+         "productLinks": {
+           "documentation": "https://docs.renovatebot.com/",
+           "help": "https://github.com/renovatebot/renovate/discussions",
+           "homepage": "https://github.com/renovatebot/renovate"
+         },
+         "globalExtends": [],
+         "description": [],
+         "enabled": true,
+         "repositoryCache": "disabled",
+         "repositoryCacheType": "local",
+         "force": {},
+         "draftPR": false,
+         "printConfig": true,
+         "composerIgnorePlatformReqs": [],
+         "logContext": null,
+         "onboarding": true,
+         "onboardingConfig": {
+           "$schema": "https://docs.renovatebot.com/renovate-schema.json"
+         },
+         "includeForks": false,
+         "forkMode": false,
+         "forkToken": "",
+         "requireConfig": "required",
+         "optimizeForDisabled": false,
+         "dependencyDashboard": false,
+         "dependencyDashboardApproval": false,
+         "dependencyDashboardAutoclose": false,
+         "dependencyDashboardTitle": "Dependency Dashboard",
+         "dependencyDashboardHeader": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.",
+         "dependencyDashboardFooter": null,
+         "dependencyDashboardLabels": null,
+         "configWarningReuseIssue": true,
+         "privateKeyPath": null,
+         "privateKeyPathOld": null,
+         "encrypted": null,
+         "timezone": null,
+         "schedule": ["at any time"],
+         "automergeSchedule": ["at any time"],
+         "updateNotScheduled": true,
+         "persistRepoData": false,
+         "ignorePlugins": false,
+         "ignoreScripts": false,
+         "username": null,
+         "password": null,
+         "npmrc": null,
+         "npmrcMerge": false,
+         "npmToken": null,
+         "updateLockFiles": true,
+         "skipInstalls": null,
+         "baseBranches": ["some_branch"],
+         "useBaseBranchConfig": "merge",
+         "gitAuthor": "Róbert Papp <papp.robert.s@gmail.com>",
+         "gitIgnoredAuthors": [],
+         "enabledManagers": [],
+         "includePaths": [],
+         "ignorePaths": ["gradle/**"],
+         "excludeCommitPaths": [],
+         "registryAliases": {},
+         "defaultRegistryUrls": null,
+         "registryUrls": null,
+         "extractVersion": null,
+         "versioning": null,
+         "azureWorkItemId": 0,
+         "azureAutoApprove": false,
+         "ignoreDeps": [],
+         "updateInternalDeps": false,
+         "packageRules": [],
+         "pinDigests": false,
+         "separateMajorMinor": true,
+         "separateMultipleMajor": false,
+         "separateMinorPatch": false,
+         "ignoreUnstable": true,
+         "ignoreDeprecated": true,
+         "followTag": null,
+         "respectLatest": true,
+         "rangeStrategy": "replace",
+         "branchPrefix": "renovate/",
+         "branchPrefixOld": "renovate/",
+         "bumpVersion": null,
+         "major": {},
+         "minor": {},
+         "patch": {},
+         "pin": {
+           "rebaseWhen": "behind-base-branch",
+           "groupName": "Pin Dependencies",
+           "groupSlug": "pin-dependencies",
+           "commitMessageAction": "Pin",
+           "group": {"commitMessageTopic": "dependencies", "commitMessageExtra": ""}
+         },
+         "digest": {
+           "branchTopic": "{{{depNameSanitized}}}-digest",
+           "commitMessageExtra": "to {{newDigestShort}}",
+           "commitMessageTopic": "{{{depName}}} digest"
+         },
+         "pinDigest": {
+           "groupName": "Pin Dependencies",
+           "groupSlug": "pin-dependencies",
+           "commitMessageAction": "Pin",
+           "group": {"commitMessageTopic": "dependencies", "commitMessageExtra": ""}
+         },
+         "rollback": {
+           "branchTopic": "{{{depNameSanitized}}}-rollback",
+           "commitMessageAction": "Roll back",
+           "semanticCommitType": "fix"
+         },
+         "replacement": {
+           "branchTopic": "{{{depNameSanitized}}}-replacement",
+           "commitMessageAction": "Replace",
+           "commitMessageExtra": "with {{newName}} {{#if isMajor}}{{{prettyNewMajor}}}{{else}}{{#if isSingleVersion}}{{{prettyNewVersion}}}{{else}}{{{newValue}}}{{/if}}{{/if}}",
+           "prBodyNotes": [
+             "This is a special PR that replaces `{{{depNameSanitized}}}` with the community suggested minimal stable replacement version."
+           ]
+         },
+         "semanticCommits": "disabled",
+         "semanticCommitType": "chore",
+         "semanticCommitScope": "deps",
+         "rollbackPrs": false,
+         "recreateClosed": false,
+         "rebaseWhen": "auto",
+         "rebaseLabel": "rebase",
+         "stopUpdatingLabel": "stop-updating",
+         "stabilityDays": 0,
+         "internalChecksFilter": "none",
+         "prCreation": "immediate",
+         "prNotPendingHours": 25,
+         "prHourlyLimit": 0,
+         "prConcurrentLimit": 0,
+         "branchConcurrentLimit": null,
+         "prPriority": 0,
+         "bbUseDefaultReviewers": true,
+         "automerge": false,
+         "automergeType": "pr",
+         "automergeStrategy": "auto",
+         "automergeComment": "automergeComment",
+         "ignoreTests": false,
+         "transitiveRemediation": false,
+         "vulnerabilityAlerts": {
+           "groupName": null,
+           "schedule": [],
+           "dependencyDashboardApproval": false,
+           "stabilityDays": 0,
+           "rangeStrategy": "update-lockfile",
+           "commitMessageSuffix": "[SECURITY]",
+           "branchTopic": "{{{datasource}}}-{{{depName}}}-vulnerability",
+           "prCreation": "immediate"
+         },
+         "pruneBranchAfterAutomerge": true,
+         "branchName": "{{{branchPrefix}}}{{{additionalBranchPrefix}}}{{{branchTopic}}}",
+         "additionalBranchPrefix": "",
+         "branchTopic": "{{{depNameSanitized}}}-{{{newMajor}}}{{#if separateMinorPatch}}{{#if isPatch}}.{{{newMinor}}}{{/if}}{{/if}}.x{{#if isLockfileUpdate}}-lockfile{{/if}}",
+         "commitMessage": "{{{commitMessagePrefix}}} {{{commitMessageAction}}} {{{commitMessageTopic}}} {{{commitMessageExtra}}} {{{commitMessageSuffix}}}",
+         "commitBody": null,
+         "commitBodyTable": false,
+         "commitMessagePrefix": null,
+         "commitMessageAction": "Update",
+         "commitMessageTopic": "dependency {{depName}}",
+         "commitMessageExtra": "to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}",
+         "commitMessageSuffix": null,
+         "prBodyTemplate": "{{{header}}}{{{table}}}{{{notes}}}{{{changelogs}}}{{{configDescription}}}{{{controls}}}{{{footer}}}",
+         "prTitle": null,
+         "prHeader": null,
+         "prFooter": "This PR has been generated by [Renovate Bot](https://github.com/renovatebot/renovate).",
+         "lockFileMaintenance": {
+           "enabled": false,
+           "recreateClosed": true,
+           "rebaseStalePrs": true,
+           "branchTopic": "lock-file-maintenance",
+           "commitMessageAction": "Lock file maintenance",
+           "commitMessageTopic": null,
+           "commitMessageExtra": null,
+           "schedule": ["before 5am on monday"],
+           "groupName": null,
+           "prBodyDefinitions": {"Change": "All locks refreshed"}
+         },
+         "hashedBranchLength": null,
+         "groupName": null,
+         "groupSlug": null,
+         "group": {
+           "branchTopic": "{{{groupSlug}}}",
+           "commitMessageTopic": "{{{groupName}}}"
+         },
+         "labels": [],
+         "addLabels": [],
+         "assignees": [],
+         "assigneesFromCodeOwners": false,
+         "assigneesSampleSize": null,
+         "assignAutomerge": false,
+         "reviewers": [],
+         "reviewersFromCodeOwners": false,
+         "filterUnavailableUsers": false,
+         "confidential": false,
+         "reviewersSampleSize": null,
+         "additionalReviewers": [],
+         "fileMatch": [],
+         "js": {},
+         "golang": {"commitMessageTopic": "module {{depName}}"},
+         "postUpdateOptions": [],
+         "ruby": {},
+         "rust": {},
+         "node": {"commitMessageTopic": "Node.js"},
+         "docker": {"versioning": "docker"},
+         "php": {},
+         "python": {},
+         "constraints": {},
+         "java": {},
+         "dotnet": {},
+         "hostRules": [],
+         "prBodyDefinitions": {
+           "Package": "{{{depNameLinked}}}",
+           "Type": "{{{depType}}}",
+           "Update": "{{{updateType}}}",
+           "Current value": "{{{currentValue}}}",
+           "New value": "{{{newValue}}}",
+           "Change": "`{{{displayFrom}}}` -> `{{{displayTo}}}`",
+           "Pending": "{{{displayPending}}}",
+           "References": "{{{references}}}",
+           "Package file": "{{{packageFile}}}"
+         },
+         "prBodyColumns": ["Package", "Type", "Update", "Change", "Pending"],
+         "prBodyNotes": [],
+         "suppressNotifications": ["deprecationWarningIssues"],
+         "pruneStaleBranches": true,
+         "unicodeEmoji": true,
+         "gitLabIgnoreApprovals": false,
+         "regexManagers": [],
+         "fetchReleaseNotes": true,
+         "cloneSubmodules": false,
+         "ignorePrAuthor": false,
+         "updatePinnedDependencies": true,
+         "gitUrl": "default",
+         "writeDiscoveredRepos": null,
+         "platformAutomerge": false,
+         "userStrings": {
+           "ignoreTopic": "Renovate Ignore Notification",
+           "ignoreMajor": "As this PR has been closed unmerged, Renovate will ignore this upgrade and you will not receive PRs for *any* future {{{newMajor}}}.x releases. However, if you upgrade to {{{newMajor}}}.x manually then Renovate will reenable minor and patch updates automatically.",
+           "ignoreDigest": "As this PR has been closed unmerged, Renovate will ignore this upgrade and you will not receive PRs for the `{{{depName}}}` `{{{newDigestShort}}}` update again.",
+           "ignoreOther": "As this PR has been closed unmerged, Renovate will now ignore this update ({{{newValue}}}). You will still receive a PR once a newer version is released, so if you wish to permanently ignore this dependency, please add it to the `ignoreDeps` array of your renovate config."
+         },
+         "platformCommit": false,
+         "branchNameStrict": false,
+         "ansible": {"fileMatch": ["(^|/)tasks/[^/]+\\.ya?ml$"]},
+         "ansible-galaxy": {
+           "fileMatch": ["(^|/)requirements\\.ya?ml$", "(^|/)galaxy\\.ya?ml$"]
+         },
+         "argocd": {"fileMatch": []},
+         "azure-pipelines": {"fileMatch": ["azure.*pipelines?.*\\.ya?ml$"]},
+         "batect": {"fileMatch": ["(^|/)batect(-bundle)?\\.yml$"]},
+         "batect-wrapper": {"fileMatch": ["(^|/)batect$"], "versioning": "semver"},
+         "bazel": {"fileMatch": ["(^|/)WORKSPACE(|\\.bazel)$", "\\.bzl$"]},
+         "bazelisk": {"fileMatch": ["(^|\\/)\\.bazelversion$"], "pinDigests": false},
+         "bitbucket-pipelines": {
+           "fileMatch": ["(^|/)\\.?bitbucket-pipelines\\.ya?ml$"]
+         },
+         "buildkite": {
+           "fileMatch": ["buildkite\\.ya?ml", "\\.buildkite/.+\\.ya?ml$"],
+           "commitMessageTopic": "buildkite plugin {{depName}}",
+           "commitMessageExtra": "to {{#if isMajor}}{{{prettyNewMajor}}}{{else}}{{{newValue}}}{{/if}}"
+         },
+         "bundler": {"fileMatch": ["(^|/)Gemfile$"], "versioning": "ruby"},
+         "cake": {"fileMatch": ["\\.cake$"]},
+         "cargo": {
+           "commitMessageTopic": "Rust crate {{depName}}",
+           "fileMatch": ["(^|/)Cargo\\.toml$"],
+           "versioning": "cargo",
+           "rangeStrategy": "bump"
+         },
+         "cdnurl": {"fileMatch": [], "versioning": "semver"},
+         "circleci": {"fileMatch": ["(^|/)\\.circleci/config\\.yml$"]},
+         "cloudbuild": {"fileMatch": ["(^|/)cloudbuild\\.ya?ml"]},
+         "cocoapods": {"fileMatch": ["(^|/)Podfile$"], "versioning": "ruby"},
+         "composer": {
+           "fileMatch": ["(^|/)([\\w-]*)composer\\.json$"],
+           "versioning": "composer"
+         },
+         "conan": {
+           "fileMatch": ["(^|/)conanfile\\.(txt|py)$"],
+           "datasource": "conan",
+           "versioning": "conan",
+           "rangeStrategy": "bump",
+           "enabled": false
+         },
+         "deps-edn": {"fileMatch": ["(^|/)(?:deps|bb)\\.edn$"], "versioning": "maven"},
+         "docker-compose": {"fileMatch": ["(^|/)(?:docker-)?compose[^/]*\\.ya?ml$"]},
+         "dockerfile": {
+           "fileMatch": ["(^|/|\\.)Dockerfile$", "(^|/)Dockerfile[^/]*$"]
+         },
+         "droneci": {"fileMatch": ["(^|/)\\.drone\\.yml$"]},
+         "fleet": {"fileMatch": ["(^|/)fleet\\.ya?ml"]},
+         "flux": {"fileMatch": ["(^|/)flux-system/gotk-components\\.yaml$"]},
+         "fvm": {
+           "fileMatch": ["(^|\\/)\\.fvm\\/fvm_config\\.json$"],
+           "versioning": "semver"
+         },
+         "git-submodules": {
+           "enabled": false,
+           "versioning": "git",
+           "fileMatch": ["(^|/)\\.gitmodules$"]
+         },
+         "github-actions": {
+           "fileMatch": [
+             "^(workflow-templates|\\.github\\/workflows)\\/[^/]+\\.ya?ml$",
+             "(^|\\/)action\\.ya?ml$"
+           ]
+         },
+         "gitlabci": {"fileMatch": ["\\.gitlab-ci\\.yml$"]},
+         "gitlabci-include": {"fileMatch": ["\\.gitlab-ci\\.yml$"]},
+         "gomod": {"fileMatch": ["(^|/)go\\.mod$"]},
+         "gradle": {
+           "fileMatch": [
+             "\\.gradle(\\.kts)?$",
+             "(^|\\/)gradle\\.properties$",
+             "(^|\\/)gradle\\/.+\\.toml$",
+             "\\.versions\\.toml$"
+           ],
+           "timeout": 600,
+           "versioning": "gradle"
+         },
+         "gradle-wrapper": {
+           "fileMatch": ["(^|/)gradle/wrapper/gradle-wrapper\\.properties$"],
+           "versioning": "gradle"
+         },
+         "helm-requirements": {
+           "registryAliases": {"stable": "https://charts.helm.sh/stable"},
+           "commitMessageTopic": "helm chart {{depName}}",
+           "fileMatch": ["(^|/)requirements\\.yaml$"]
+         },
+         "helm-values": {
+           "commitMessageTopic": "helm values {{depName}}",
+           "fileMatch": ["(^|/)values\\.yaml$"],
+           "pinDigests": false
+         },
+         "helmfile": {
+           "registryAliases": {"stable": "https://charts.helm.sh/stable"},
+           "commitMessageTopic": "helm chart {{depName}}",
+           "fileMatch": ["(^|/)helmfile\\.yaml$"]
+         },
+         "helmsman": {"fileMatch": []},
+         "helmv3": {
+           "registryAliases": {"stable": "https://charts.helm.sh/stable"},
+           "commitMessageTopic": "helm chart {{depName}}",
+           "fileMatch": ["(^|/)Chart\\.yaml$"]
+         },
+         "hermit": {
+           "fileMatch": ["(^|/)bin/hermit$"],
+           "excludeCommitPaths": ["**/bin/hermit"],
+           "versioning": "hermit"
+         },
+         "homebrew": {
+           "commitMessageTopic": "Homebrew Formula {{depName}}",
+           "fileMatch": ["^Formula/[^/]+[.]rb$"]
+         },
+         "html": {
+           "fileMatch": ["\\.html?$"],
+           "versioning": "semver",
+           "digest": {"enabled": false},
+           "pinDigests": false
+         },
+         "jenkins": {"fileMatch": ["(^|/)plugins\\.(txt|ya?ml)$"]},
+         "jsonnet-bundler": {
+           "fileMatch": ["(^|/)jsonnetfile\\.json$"],
+           "datasource": "git-tags"
+         },
+         "kotlin-script": {"fileMatch": ["^.+\\.main\\.kts$"]},
+         "kubernetes": {"fileMatch": []},
+         "kustomize": {
+           "fileMatch": ["(^|/)kustomization\\.ya?ml$"],
+           "pinDigests": false
+         },
+         "leiningen": {"fileMatch": ["(^|/)project\\.clj$"], "versioning": "maven"},
+         "maven": {
+           "fileMatch": [
+             "(^|/|\\.)pom\\.xml$",
+             "^(((\\.mvn)|(\\.m2))/)?settings\\.xml$"
+           ],
+           "versioning": "maven"
+         },
+         "meteor": {"fileMatch": ["(^|/)package\\.js$"]},
+         "mix": {"fileMatch": ["(^|/)mix\\.exs$"], "versioning": "hex"},
+         "nodenv": {"fileMatch": ["(^|/)\\.node-version$"], "versioning": "node"},
+         "npm": {
+           "fileMatch": ["(^|/)package\\.json$"],
+           "rollbackPrs": true,
+           "versioning": "npm",
+           "digest": {
+             "prBodyDefinitions": {
+               "Change": "{{#if displayFrom}}`{{{displayFrom}}}` -> {{else}}{{#if currentValue}}`{{{currentValue}}}` -> {{/if}}{{/if}}{{#if displayTo}}`{{{displayTo}}}`{{else}}`{{{newValue}}}`{{/if}}"
+             }
+           },
+           "prBodyDefinitions": {
+             "Change": "[{{#if displayFrom}}`{{{displayFrom}}}` -> {{else}}{{#if currentValue}}`{{{currentValue}}}` -> {{/if}}{{/if}}{{#if displayTo}}`{{{displayTo}}}`{{else}}`{{{newValue}}}`{{/if}}]({{#if depName}}https://renovatebot.com/diffs/npm/{{replace '/' '%2f' depName}}/{{{currentVersion}}}/{{{newVersion}}}{{/if}})"
+           }
+         },
+         "nuget": {
+           "fileMatch": [
+             "\\.(?:cs|fs|vb)proj$",
+             "\\.(?:props|targets)$",
+             "(^|\\/)dotnet-tools\\.json$",
+             "(^|\\/)global\\.json$"
+           ]
+         },
+         "nvm": {
+           "fileMatch": ["(^|/)\\.nvmrc$"],
+           "versioning": "node",
+           "pinDigests": false
+         },
+         "pip-compile": {
+           "fileMatch": [],
+           "lockFileMaintenance": {
+             "enabled": true,
+             "branchTopic": "pip-compile-refresh",
+             "commitMessageAction": "Refresh pip-compile outputs"
+           }
+         },
+         "pip_requirements": {
+           "fileMatch": ["(^|/)([\\w-]*)requirements\\.(txt|pip)$"]
+         },
+         "pip_setup": {"fileMatch": ["(^|/)setup\\.py$"]},
+         "pipenv": {"fileMatch": ["(^|/)Pipfile$"]},
+         "poetry": {"fileMatch": ["(^|/)pyproject\\.toml$"]},
+         "pre-commit": {
+           "commitMessageTopic": "pre-commit hook {{depName}}",
+           "enabled": false,
+           "fileMatch": ["(^|/)\\.pre-commit-config\\.yaml$"],
+           "prBodyNotes": [
+             "Note: The `pre-commit` manager in Renovate is not supported by the `pre-commit` maintainers or community. Please do not report any problems there, instead [create a Discussion in the Renovate repository](https://github.com/renovatebot/renovate/discussions/new) if you have any questions."
+           ]
+         },
+         "pub": {"fileMatch": ["(^|/)pubspec\\.ya?ml$"], "versioning": "npm"},
+         "puppet": {"fileMatch": ["(^|\\/)Puppetfile$"]},
+         "pyenv": {"fileMatch": ["(^|/)\\.python-version$"], "versioning": "docker"},
+         "regex": {"pinDigests": false},
+         "ruby-version": {
+           "fileMatch": ["(^|/)\\.ruby-version$"],
+           "versioning": "ruby"
+         },
+         "sbt": {
+           "fileMatch": ["\\.sbt$", "project/[^/]*.scala$"],
+           "versioning": "ivy"
+         },
+         "setup-cfg": {"fileMatch": ["(^|/)setup\\.cfg$"], "versioning": "pep440"},
+         "swift": {
+           "fileMatch": ["(^|/)Package\\.swift"],
+           "versioning": "swift",
+           "rangeStrategy": "bump"
+         },
+         "terraform": {
+           "commitMessageTopic": "Terraform {{depName}}",
+           "fileMatch": ["\\.tf$"],
+           "versioning": "hashicorp",
+           "pinDigests": false
+         },
+         "terraform-version": {
+           "fileMatch": ["(^|/)\\.terraform-version$"],
+           "versioning": "hashicorp",
+           "extractVersion": "^v(?<version>.*)$"
+         },
+         "terragrunt": {
+           "commitMessageTopic": "Terragrunt dependency {{depName}}",
+           "fileMatch": ["(^|/)terragrunt\\.hcl$"],
+           "versioning": "hashicorp"
+         },
+         "terragrunt-version": {
+           "fileMatch": ["(^|/)\\.terragrunt-version$"],
+           "versioning": "hashicorp",
+           "extractVersion": "^v(?<version>.+)$"
+         },
+         "travis": {
+           "fileMatch": ["^\\.travis\\.yml$"],
+           "major": {"enabled": false},
+           "versioning": "node"
+         },
+         "velaci": {"fileMatch": ["(^|/)\\.vela\\.ya?ml$"]},
+         "renovateUsername": "TWiStErRob",
+         "repository": "TWiStErRob/renovate-repro-17635",
+         "errors": [],
+         "warnings": [],
+         "branchList": [],
+         "defaultBranch": "main",
+         "isFork": false,
+         "repoFingerprint": "11e3293f8fd9e74efff303c2625461f2c26789e2b38e0c035aefd8a9d7d86112df72c1c78e4f43f8716396c0192f2f75350cf2e6317738e09a377035f7174ff8",
+         "baseBranch": "main",
+         "repoIsOnboarded": true,
+         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+         "renovateJsonPresent": true
+       },
+       "hostRules": [
+         {"timeout": 60000},
+         {
+           "matchHost": "api.github.com",
+           "token": "***********",
+           "hostType": "github",
+           "resolvedHost": "api.github.com"
+         }
+       ]
+DEBUG: baseBranches (repository=TWiStErRob/renovate-repro-17635)
+       "baseBranches": ["some_branch"]
+DEBUG: baseBranch: some_branch (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Merging config from base branch because useBaseBranchConfig=merge (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: extract() (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Setting current branch to some_branch (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: latest commit (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+       "branchName": "some_branch",
+       "latestCommitDate": "2022-09-06T09:59:49+01:00"
+DEBUG: Using file match: (^|/)tasks/[^/]+\.ya?ml$ for manager ansible (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)requirements\.ya?ml$ for manager ansible-galaxy (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)galaxy\.ya?ml$ for manager ansible-galaxy (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: azure.*pipelines?.*\.ya?ml$ for manager azure-pipelines (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)batect(-bundle)?\.yml$ for manager batect (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)batect$ for manager batect-wrapper (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)WORKSPACE(|\.bazel)$ for manager bazel (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: \.bzl$ for manager bazel (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|\/)\.bazelversion$ for manager bazelisk (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)\.?bitbucket-pipelines\.ya?ml$ for manager bitbucket-pipelines (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: buildkite\.ya?ml for manager buildkite (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: \.buildkite/.+\.ya?ml$ for manager buildkite (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)Gemfile$ for manager bundler (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: \.cake$ for manager cake (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)Cargo\.toml$ for manager cargo (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)\.circleci/config\.yml$ for manager circleci (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)cloudbuild\.ya?ml for manager cloudbuild (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)Podfile$ for manager cocoapods (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)([\w-]*)composer\.json$ for manager composer (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)conanfile\.(txt|py)$ for manager conan (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)(?:deps|bb)\.edn$ for manager deps-edn (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)(?:docker-)?compose[^/]*\.ya?ml$ for manager docker-compose (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/|\.)Dockerfile$ for manager dockerfile (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)Dockerfile[^/]*$ for manager dockerfile (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)\.drone\.yml$ for manager droneci (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)fleet\.ya?ml for manager fleet (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)flux-system/gotk-components\.yaml$ for manager flux (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|\/)\.fvm\/fvm_config\.json$ for manager fvm (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)\.gitmodules$ for manager git-submodules (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: ^(workflow-templates|\.github\/workflows)\/[^/]+\.ya?ml$ for manager github-actions (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|\/)action\.ya?ml$ for manager github-actions (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: \.gitlab-ci\.yml$ for manager gitlabci (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: \.gitlab-ci\.yml$ for manager gitlabci-include (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)go\.mod$ for manager gomod (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: \.gradle(\.kts)?$ for manager gradle (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|\/)gradle\.properties$ for manager gradle (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|\/)gradle\/.+\.toml$ for manager gradle (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: \.versions\.toml$ for manager gradle (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)gradle/wrapper/gradle-wrapper\.properties$ for manager gradle-wrapper (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)requirements\.yaml$ for manager helm-requirements (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)values\.yaml$ for manager helm-values (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)helmfile\.yaml$ for manager helmfile (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)Chart\.yaml$ for manager helmv3 (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)bin/hermit$ for manager hermit (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: ^Formula/[^/]+[.]rb$ for manager homebrew (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: \.html?$ for manager html (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)plugins\.(txt|ya?ml)$ for manager jenkins (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)jsonnetfile\.json$ for manager jsonnet-bundler (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: ^.+\.main\.kts$ for manager kotlin-script (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)kustomization\.ya?ml$ for manager kustomize (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)project\.clj$ for manager leiningen (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/|\.)pom\.xml$ for manager maven (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: ^(((\.mvn)|(\.m2))/)?settings\.xml$ for manager maven (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)package\.js$ for manager meteor (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)mix\.exs$ for manager mix (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)\.node-version$ for manager nodenv (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)package\.json$ for manager npm (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: \.(?:cs|fs|vb)proj$ for manager nuget (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: \.(?:props|targets)$ for manager nuget (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|\/)dotnet-tools\.json$ for manager nuget (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|\/)global\.json$ for manager nuget (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)\.nvmrc$ for manager nvm (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)([\w-]*)requirements\.(txt|pip)$ for manager pip_requirements (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)setup\.py$ for manager pip_setup (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)Pipfile$ for manager pipenv (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)pyproject\.toml$ for manager poetry (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)\.pre-commit-config\.yaml$ for manager pre-commit (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)pubspec\.ya?ml$ for manager pub (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|\/)Puppetfile$ for manager puppet (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)\.python-version$ for manager pyenv (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)\.ruby-version$ for manager ruby-version (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: \.sbt$ for manager sbt (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: project/[^/]*.scala$ for manager sbt (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)setup\.cfg$ for manager setup-cfg (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)Package\.swift for manager swift (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: \.tf$ for manager terraform (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)\.terraform-version$ for manager terraform-version (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)terragrunt\.hcl$ for manager terragrunt (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)\.terragrunt-version$ for manager terragrunt-version (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: ^\.travis\.yml$ for manager travis (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using file match: (^|/)\.vela\.ya?ml$ for manager velaci (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Matched 1 file(s) for manager gradle: gradle/libs.versions.toml (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Found gradle package files (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Found 1 package file(s) (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+ INFO: Dependency extraction complete (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+       "stats": {
+         "managers": {"gradle": {"fileCount": 1, "depCount": 1}},
+         "total": {"fileCount": 1, "depCount": 1}
+       }
+DEBUG: baseBranch: some_branch (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Merging config from base branch because useBaseBranchConfig=merge (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Looking up junit:junit in repository https://repo.maven.apache.org/maven2/ (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Found 32 new releases for junit:junit in repository https://repo.maven.apache.org/maven2/ (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: No concurency limits (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+       "host": "repo.maven.apache.org"
+DEBUG: PackageFiles.add() - Package file saved for branch (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Package releases lookups complete (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: branchifyUpgrades (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Using group branchName template (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Dependency junit:junit is part of group junit (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: 1 flattened updates found: junit:junit (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: Returning 1 branch(es) (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: config.repoIsOnboarded=true (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+DEBUG: packageFiles with updates (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
+       "config": {
+         "gradle": [
+           {
+             "packageFile": "gradle/libs.versions.toml",
+             "datasource": "maven",
+             "deps": [
+               {
+                 "depName": "junit:junit",
+                 "groupName": "junit",
+                 "currentValue": "4.12",
+                 "managerData": {
+                   "fileReplacePosition": 58,
+                   "packageFile": "gradle/libs.versions.toml"
+                 },
+                 "fileReplacePosition": 58,
+                 "registryUrls": [],
+                 "depType": "dependencies",
+                 "depIndex": 0,
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "4.13.2",
+                     "newValue": "4.13.2",
+                     "releaseTimestamp": "2021-02-13T16:31:54.000Z",
+                     "newMajor": 4,
+                     "newMinor": 13,
+                     "updateType": "minor",
+                     "branchName": "renovate/junit"
+                   }
+                 ],
+                 "warnings": [],
+                 "versioning": "gradle",
+                 "sourceUrl": "https://github.com/junit-team/junit4",
+                 "homepage": "http://junit.org",
+                 "currentVersion": "4.12",
+                 "isSingleVersion": true,
+                 "fixedVersion": "4.12"
+               }
+             ]
+           }
+         ]
+       }
+DEBUG: processRepo() (repository=TWiStErRob/renovate-repro-17635)
+DEBUG: Processing 1 branch: renovate/junit (repository=TWiStErRob/renovate-repro-17635)
+DEBUG: Calculated maximum PRs remaining this run (repository=TWiStErRob/renovate-repro-17635)
+       "prsRemaining": 99
+DEBUG: PullRequests limit = 99 (repository=TWiStErRob/renovate-repro-17635)
+DEBUG: Calculated maximum branches remaining this run (repository=TWiStErRob/renovate-repro-17635)
+       "branchesRemaining": 99
+DEBUG: Branches limit = 99 (repository=TWiStErRob/renovate-repro-17635)
+DEBUG: getBranchPr(renovate/junit) (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch, branch=renovate/junit)
+DEBUG: findPr(renovate/junit, undefined, open) (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch, branch=renovate/junit)
+DEBUG: getPrList success (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch, branch=renovate/junit)
+       "pullsTotal": 1,
+       "requestsTotal": 1,
+       "apiQuotaAffected": true
+DEBUG: findPr(renovate/junit, undefined, closed) (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch, branch=renovate/junit)
+DEBUG: branchExists=false (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch, branch=renovate/junit)
+DEBUG: dependencyDashboardCheck=undefined (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch, branch=renovate/junit)
+DEBUG: recreateClosed is false (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch, branch=renovate/junit)
+DEBUG: findPr(renovate/junit, Update dependency junit:junit to v4.13.2, !open) (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch, branch=renovate/junit)
+DEBUG: prAlreadyExisted=false (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch, branch=renovate/junit)
+DEBUG: Checking schedule(at any time, null) (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch, branch=renovate/junit)
+DEBUG: No schedule defined (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch, branch=renovate/junit)
+DEBUG: Branch needs creating (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch, branch=renovate/junit)
+DEBUG: Using reuseExistingBranch: false (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch, branch=renovate/junit)
+DEBUG: Setting current branch to some_branch (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch, branch=renovate/junit)
+DEBUG: latest commit (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch, branch=renovate/junit)
+       "branchName": "some_branch",
+       "latestCommitDate": "2022-09-06T09:59:49+01:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch, branch=renovate/junit)
+DEBUG: Updating junit:junit in gradle/libs.versions.toml (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch, branch=renovate/junit)
+DEBUG: Updated 1 package files (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch, branch=renovate/junit)
+DEBUG: No updated lock files in branch (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch, branch=renovate/junit)
+DEBUG: 1 file(s) to commit (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch, branch=renovate/junit)
+ INFO: DRY-RUN: Would commit files to branch renovate/junit (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch, branch=renovate/junit)
+ INFO: DRY-RUN: Would close Dependency Dashboard (repository=TWiStErRob/renovate-repro-17635)
+       "title": "Dependency Dashboard"
+DEBUG: Removing any stale branches (repository=TWiStErRob/renovate-repro-17635)
+DEBUG: config.repoIsOnboarded=true (repository=TWiStErRob/renovate-repro-17635)
+DEBUG: No renovate branches found (repository=TWiStErRob/renovate-repro-17635)
+DEBUG: PackageFiles.clear() - Package files deleted (repository=TWiStErRob/renovate-repro-17635)
+       "baseBranches": ["some_branch"]
+DEBUG: Renovate repository PR statistics (repository=TWiStErRob/renovate-repro-17635)
+       "stats": {"total": 1, "open": 1, "closed": 0, "merged": 0}
+DEBUG: Repository result: done, status: onboarded, enabled: true, onboarded: true (repository=TWiStErRob/renovate-repro-17635)
+DEBUG: Repository timing splits (milliseconds) (repository=TWiStErRob/renovate-repro-17635)
+       "splits": {"init": 2876, "extract": 1102, "lookup": 135, "onboarding": 0, "update": 549},
+       "total": 4675
+DEBUG: http statistics (repository=TWiStErRob/renovate-repro-17635)
+       "urls": {
+         "https://api.github.com/graphql (POST,200)": 2,
+         "https://api.github.com/repos/TWiStErRob/renovate-repro-17635/contents/renovate.json (GET,200)": 1,
+         "https://api.github.com/repos/TWiStErRob/renovate-repro-17635/pulls (GET,200)": 1,
+         "https://repo.maven.apache.org/maven2/junit/junit/4.13.2/junit-4.13.2.pom (GET,200)": 1
+       },
+       "hostStats": {
+         "api.github.com": {"requestCount": 4, "requestAvgMs": 249, "queueAvgMs": 0},
+         "repo.maven.apache.org": {
+           "requestCount": 1,
+           "requestAvgMs": 59,
+           "queueAvgMs": 0
+         }
+       },
+       "totalRequests": 5
+ INFO: Repository finished (repository=TWiStErRob/renovate-repro-17635)
+       "durationMs": 4675
+DEBUG: dns cache (repository=TWiStErRob/renovate-repro-17635)
+       "hosts": []
+DEBUG: Renovate exiting
