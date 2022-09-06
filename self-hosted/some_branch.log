@@ -71,12 +71,12 @@ DEBUG: detectSemanticCommits() (repository=TWiStErRob/renovate-repro-17635)
 DEBUG: Initializing git repository into C:/Users/TWiStEr/AppData/Local/Temp/renovate/repos/github/TWiStErRob/renovate-repro-17635 (repository=TWiStErRob/renovate-repro-17635)
 DEBUG: Performing blobless clone (repository=TWiStErRob/renovate-repro-17635)
 DEBUG: git clone completed (repository=TWiStErRob/renovate-repro-17635)
-       "durationMs": 1273
+       "durationMs": 1210
 DEBUG: latest repository commit (repository=TWiStErRob/renovate-repro-17635)
        "latestCommit": {
-         "hash": "4462d9e8586c8b68567572fd877b718e1557222f",
-         "date": "2022-09-06T21:54:20+01:00",
-         "message": "Add minimal repro with self-hosted setup",
+         "hash": "3db1f0b0fca8fea3cdaba8e80c93aeb99e3d20b3",
+         "date": "2022-09-06T22:11:58+01:00",
+         "message": "Actual logs",
          "refs": "HEAD -> main, origin/main, origin/HEAD",
          "body": "",
          "author_name": "Róbert Papp (TWiStErRob)",
@@ -633,7 +633,7 @@ DEBUG: extract() (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_br
 DEBUG: Setting current branch to some_branch (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
 DEBUG: latest commit (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
        "branchName": "some_branch",
-       "latestCommitDate": "2022-09-06T09:59:49+01:00"
+       "latestCommitDate": "2022-09-06T09:43:53+01:00"
 DEBUG: Using file match: (^|/)tasks/[^/]+\.ya?ml$ for manager ansible (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
 DEBUG: Using file match: (^|/)requirements\.ya?ml$ for manager ansible-galaxy (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
 DEBUG: Using file match: (^|/)galaxy\.ya?ml$ for manager ansible-galaxy (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch)
@@ -807,7 +807,7 @@ DEBUG: Using reuseExistingBranch: false (repository=TWiStErRob/renovate-repro-17
 DEBUG: Setting current branch to some_branch (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch, branch=renovate/junit)
 DEBUG: latest commit (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch, branch=renovate/junit)
        "branchName": "some_branch",
-       "latestCommitDate": "2022-09-06T09:59:49+01:00"
+       "latestCommitDate": "2022-09-06T09:43:53+01:00"
 DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch, branch=renovate/junit)
 DEBUG: Updating junit:junit in gradle/libs.versions.toml (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch, branch=renovate/junit)
 DEBUG: Updated 1 package files (repository=TWiStErRob/renovate-repro-17635, baseBranch=some_branch, branch=renovate/junit)
@@ -825,8 +825,8 @@ DEBUG: Renovate repository PR statistics (repository=TWiStErRob/renovate-repro-1
        "stats": {"total": 1, "open": 1, "closed": 0, "merged": 0}
 DEBUG: Repository result: done, status: onboarded, enabled: true, onboarded: true (repository=TWiStErRob/renovate-repro-17635)
 DEBUG: Repository timing splits (milliseconds) (repository=TWiStErRob/renovate-repro-17635)
-       "splits": {"init": 2876, "extract": 1102, "lookup": 135, "onboarding": 0, "update": 549},
-       "total": 4675
+       "splits": {"init": 2823, "extract": 1178, "lookup": 139, "onboarding": 0, "update": 609},
+       "total": 4763
 DEBUG: http statistics (repository=TWiStErRob/renovate-repro-17635)
        "urls": {
          "https://api.github.com/graphql (POST,200)": 2,
@@ -835,16 +835,16 @@ DEBUG: http statistics (repository=TWiStErRob/renovate-repro-17635)
          "https://repo.maven.apache.org/maven2/junit/junit/4.13.2/junit-4.13.2.pom (GET,200)": 1
        },
        "hostStats": {
-         "api.github.com": {"requestCount": 4, "requestAvgMs": 249, "queueAvgMs": 0},
+         "api.github.com": {"requestCount": 4, "requestAvgMs": 263, "queueAvgMs": 0},
          "repo.maven.apache.org": {
            "requestCount": 1,
-           "requestAvgMs": 59,
+           "requestAvgMs": 61,
            "queueAvgMs": 0
          }
        },
        "totalRequests": 5
  INFO: Repository finished (repository=TWiStErRob/renovate-repro-17635)
-       "durationMs": 4675
+       "durationMs": 4763
 DEBUG: dns cache (repository=TWiStErRob/renovate-repro-17635)
        "hosts": []
 DEBUG: Renovate exiting

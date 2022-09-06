@@ -67,12 +67,12 @@ DEBUG: detectSemanticCommits() (repository=TWiStErRob/renovate-repro-17635)
 DEBUG: Initializing git repository into C:/Users/TWiStEr/AppData/Local/Temp/renovate/repos/github/TWiStErRob/renovate-repro-17635 (repository=TWiStErRob/renovate-repro-17635)
 DEBUG: Performing blobless clone (repository=TWiStErRob/renovate-repro-17635)
 DEBUG: git clone completed (repository=TWiStErRob/renovate-repro-17635)
-       "durationMs": 1182
+       "durationMs": 1211
 DEBUG: latest repository commit (repository=TWiStErRob/renovate-repro-17635)
        "latestCommit": {
-         "hash": "4462d9e8586c8b68567572fd877b718e1557222f",
-         "date": "2022-09-06T21:54:20+01:00",
-         "message": "Add minimal repro with self-hosted setup",
+         "hash": "3db1f0b0fca8fea3cdaba8e80c93aeb99e3d20b3",
+         "date": "2022-09-06T22:11:58+01:00",
+         "message": "Actual logs",
          "refs": "HEAD -> main, origin/main, origin/HEAD",
          "body": "",
          "author_name": "Róbert Papp (TWiStErRob)",
@@ -626,7 +626,7 @@ DEBUG: extract() (repository=TWiStErRob/renovate-repro-17635)
 DEBUG: Setting current branch to main (repository=TWiStErRob/renovate-repro-17635)
 DEBUG: latest commit (repository=TWiStErRob/renovate-repro-17635)
        "branchName": "main",
-       "latestCommitDate": "2022-09-06T21:54:20+01:00"
+       "latestCommitDate": "2022-09-06T22:11:58+01:00"
 DEBUG: Using file match: (^|/)tasks/[^/]+\.ya?ml$ for manager ansible (repository=TWiStErRob/renovate-repro-17635)
 DEBUG: Using file match: (^|/)requirements\.ya?ml$ for manager ansible-galaxy (repository=TWiStErRob/renovate-repro-17635)
 DEBUG: Using file match: (^|/)galaxy\.ya?ml$ for manager ansible-galaxy (repository=TWiStErRob/renovate-repro-17635)
@@ -720,6 +720,8 @@ DEBUG: Found 1 package file(s) (repository=TWiStErRob/renovate-repro-17635)
          "managers": {"npm": {"fileCount": 1, "depCount": 1}},
          "total": {"fileCount": 1, "depCount": 1}
        }
+DEBUG: No concurency limits (repository=TWiStErRob/renovate-repro-17635)
+       "host": "registry.npmjs.org"
 DEBUG: PackageFiles.add() - Package file saved for branch (repository=TWiStErRob/renovate-repro-17635, baseBranch=main)
 DEBUG: Package releases lookups complete (repository=TWiStErRob/renovate-repro-17635, baseBranch=main)
 DEBUG: branchifyUpgrades (repository=TWiStErRob/renovate-repro-17635)
@@ -795,7 +797,7 @@ DEBUG: Using reuseExistingBranch: false (repository=TWiStErRob/renovate-repro-17
 DEBUG: Setting current branch to main (repository=TWiStErRob/renovate-repro-17635, branch=renovate/renovate-32.x)
 DEBUG: latest commit (repository=TWiStErRob/renovate-repro-17635, branch=renovate/renovate-32.x)
        "branchName": "main",
-       "latestCommitDate": "2022-09-06T21:54:20+01:00"
+       "latestCommitDate": "2022-09-06T22:11:58+01:00"
 DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=TWiStErRob/renovate-repro-17635, branch=renovate/renovate-32.x)
 DEBUG: npm.updateDependency(): devDependencies.renovate = 32.192.3 (repository=TWiStErRob/renovate-repro-17635, branch=renovate/renovate-32.x)
 DEBUG: Updating renovate in self-hosted/package.json (repository=TWiStErRob/renovate-repro-17635, branch=renovate/renovate-32.x)
@@ -819,17 +821,25 @@ DEBUG: Renovate repository PR statistics (repository=TWiStErRob/renovate-repro-1
        "stats": {"total": 1, "open": 1, "closed": 0, "merged": 0}
 DEBUG: Repository result: done, status: onboarded, enabled: true, onboarded: true (repository=TWiStErRob/renovate-repro-17635)
 DEBUG: Repository timing splits (milliseconds) (repository=TWiStErRob/renovate-repro-17635)
-       "splits": {"init": 2800, "extract": 386, "lookup": 1584, "onboarding": 0, "update": 576},
-       "total": 5360
+       "splits": {"init": 2845, "extract": 394, "lookup": 5743, "onboarding": 0, "update": 580},
+       "total": 9575
 DEBUG: http statistics (repository=TWiStErRob/renovate-repro-17635)
        "urls": {
          "https://api.github.com/graphql (POST,200)": 2,
-         "https://api.github.com/repos/TWiStErRob/renovate-repro-17635/pulls (GET,200)": 1
+         "https://api.github.com/repos/TWiStErRob/renovate-repro-17635/pulls (GET,200)": 1,
+         "https://registry.npmjs.org/renovate (GET,200)": 1
        },
-       "hostStats": {"api.github.com": {"requestCount": 3, "requestAvgMs": 257, "queueAvgMs": 0}},
-       "totalRequests": 3
+       "hostStats": {
+         "api.github.com": {"requestCount": 3, "requestAvgMs": 266, "queueAvgMs": 0},
+         "registry.npmjs.org": {
+           "requestCount": 1,
+           "requestAvgMs": 1935,
+           "queueAvgMs": 0
+         }
+       },
+       "totalRequests": 4
  INFO: Repository finished (repository=TWiStErRob/renovate-repro-17635)
-       "durationMs": 5360
+       "durationMs": 9575
 DEBUG: dns cache (repository=TWiStErRob/renovate-repro-17635)
        "hosts": []
 DEBUG: Renovate exiting
