@@ -3,7 +3,7 @@
 	"scripts": {
 		"renovate": "renovate"
 	},
-	"devDependencies": {
-		"renovate": "32.190.4"
+	"dependencies": {
+		"six": "0.0.6"
 	}
 }
