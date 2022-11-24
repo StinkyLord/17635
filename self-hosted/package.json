@@ -4,6 +4,6 @@
 		"renovate": "renovate"
 	},
 	"dependencies": {
-		"six": "0.0.6"
+		"six": "0.0.12"
 	}
 }
